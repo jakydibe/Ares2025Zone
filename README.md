@@ -22,3 +22,10 @@ Zone has 2 modules: one for x64 payloads (**pobf.py**) and one for x86 payloads 
 In order to mutate an x64 payload we need to run: `python3 pobf.py <payload_file> <techniques>`
 
 In order to mutate an x86 payload we need to run: `python3 pobf86.py <payload_file> <techniques>`
+
+The mutated payload will be stored in the created file: `new_payload.bin`
+
+## Running and testing payloads
+
+To test an x64 payload (Execute it) run: `ploader.exe new_payload.bin`
+To test an x86 payload (Execute it) run: `ploader86.exe new_payload.bin`
